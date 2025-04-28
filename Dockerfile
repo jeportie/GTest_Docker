@@ -6,7 +6,7 @@
 #    By: jeportie <jeportie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/28 14:54:38 by jeportie          #+#    #+#              #
-#    Updated: 2025/04/28 18:30:23 by jeportie         ###   ########.fr        #
+#    Updated: 2025/04/28 18:40:23 by jeportie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -80,7 +80,7 @@ VOLUME [ "/project" ]
 
 ENV GTEST_COLOR=yes
 
-COPY CMakeLists.txt   /project/CMakeLists.txt
+COPY CMakeLists.txt   /root/CMakeLists.txt
 COPY entrypoint.sh    /usr/local/bin/entrypoint.sh
 RUN chmod +x /usr/local/bin/entrypoint.sh
 

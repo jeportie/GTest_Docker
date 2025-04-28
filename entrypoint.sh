@@ -4,6 +4,7 @@ set -e
 # Navigate to project root and prepare build directory
 echo "Entering project directory..."
 cd /project
+mv /root/CMakeLists.txt .
 
 # Clean out the old build if it exists to avoid stale CMakeCache issues :contentReference[oaicite:6]{index=6}
 rm -rf build/*
@@ -19,6 +20,7 @@ if ctest; then
     cd /project
     echo "Cleaning up build directory..."
     rm -rf build
+	rm CMakeLists.txt
     exit 0
 else
     echo "❌ Tests failed. ❌"
@@ -27,5 +29,6 @@ else
     cd /project
     echo "Cleaning up build directory..."
     rm -rf build
+	rm CMakeLists.txt
     exit 1
 fi
