@@ -3,10 +3,12 @@ set -e
 
 cd /project
 
+# Clean out the old build if it exists to avoid stale CMakeCache issues :contentReference[oaicite:6]{index=6}
+rm -rf build/*
 mkdir -p build
 cd build
 
-# Configure, compile, and run all GoogleTest tests
+# Configure, compile, and run tests
 cmake ..
-make -j"$(nproc)"
-ctest --output-on-failure
+make
+ctest
