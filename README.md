@@ -1,4 +1,3 @@
-```
 # 📦 C++98 Google Test Docker Runner
 
 This Dockerized test runner provides a zero-setup environment for building and executing C++98 projects with Google Test in the 42-school context. You write your code in `src/` and your tests in `test/`, and then run a single command to compile and see colored pass/fail output.
