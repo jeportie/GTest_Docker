@@ -99,7 +99,7 @@ Use this runner when you need a compliant, reproducible test environment for pis
 
 - [Google Test Primer](https://github.com/google/googletest)  
 - [CMake Best Practices](https://cmake.org/cmake/help/latest/guide/tutorial/index.html)  
-- [42-School C++ Norms](https://github.com/42Paris/cpp-pool/tree/master/cpp_module_00)  
+
 
 ---
 
