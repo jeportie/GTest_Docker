@@ -7,7 +7,7 @@ echo "Building Docker image as '${IMAGE_NAME}'..."
 docker build -t "${IMAGE_NAME}" .
 
 # Define the alias command (mount entire project root)
-ALIAS_CMD='alias runtest='"'"'docker run --rm \
+ALIAS_CMD='alias runtest='"'"'docker run --rm -it \
   -v "$(pwd)":/project \
   -v "$(pwd)/build":/project/build \
   gtest-runner'"'"''
