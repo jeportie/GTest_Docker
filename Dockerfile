@@ -6,7 +6,7 @@
 #    By: jeportie <jeportie@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/28 14:54:38 by jeportie          #+#    #+#              #
-#    Updated: 2025/04/28 18:14:25 by jeportie         ###   ########.fr        #
+#    Updated: 2025/04/28 18:30:23 by jeportie         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -76,7 +76,7 @@ ENV PATH="/root/venv/bin:${PATH}"
 RUN /root/venv/bin/pip install norminette
 
 WORKDIR /project
-VOLUME [ "/project", "/project/build" ]
+VOLUME [ "/project" ]
 
 ENV GTEST_COLOR=yes
 
